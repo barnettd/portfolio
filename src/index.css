@@ -3,44 +3,37 @@
 @import '@fontsource/dm-sans/500.css';
 @import 'tailwindcss';
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Base resets — inside @layer so Tailwind utilities override them */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    cursor: none !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #08111d;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: #3dd9f5;
+    color: #0a0f18;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #08111d; }
+  ::-webkit-scrollbar-thumb { background: rgba(61,217,245,0.3); border-radius: 2px; }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #08111d;
-  color: #fff;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  cursor: none;
-}
-
-*, *::before, *::after {
-  cursor: none !important;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Clash Display', sans-serif;
-  font-weight: 600;
-}
-
-::selection {
-  background-color: #3dd9f5;
-  color: #0a0f18;
-}
-
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #08111d; }
-::-webkit-scrollbar-thumb { background: rgba(61,217,245,0.3); border-radius: 2px; }
-
-.section-hidden {
-  opacity: 0;
-  transform: translateY(28px);
-}

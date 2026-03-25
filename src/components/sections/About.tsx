@@ -5,13 +5,13 @@ export function About() {
     <>
       {/* Bio */}
       <section id="about" className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.42fr_0.58fr] lg:px-10">
-        <div className="section-hidden">
+        <div className="reveal">
           <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">About</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
             Executive enough to lead. Hands-on enough to move the work.
           </h2>
         </div>
-        <div className="section-hidden space-y-6 text-lg leading-9 text-slate-300">
+        <div className="reveal space-y-6 text-lg leading-9 text-slate-300">
           <p>
             My career has been built across execution, growth, and reinvention. I've worked on more than 15 titles
             across my trajectory — not all of them became hits, but even the ones that didn't succeed became part
@@ -33,7 +33,7 @@ export function About() {
 
       {/* Beyond Tracking */}
       <section className="mx-auto max-w-7xl px-6 pb-24 lg:px-10">
-        <div className="section-hidden max-w-3xl">
+        <div className="reveal max-w-3xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">It's not about tracking</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
             Project tracking is only the surface layer.

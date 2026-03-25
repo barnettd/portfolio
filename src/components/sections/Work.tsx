@@ -6,7 +6,7 @@ export function Work() {
 
   return (
     <section id="work" className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-      <div className="section-hidden max-w-3xl">
+      <div className="reveal max-w-3xl">
         <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">Selected work</p>
         <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
           Flagship product work.
@@ -18,7 +18,7 @@ export function Work() {
       </div>
 
       {/* Featured card */}
-      <div className="section-hidden mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035]">
+      <div className="reveal mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035]">
         <div className="grid gap-0 xl:grid-cols-[1.05fr_0.95fr]">
           {/* Visual panel */}
           <div

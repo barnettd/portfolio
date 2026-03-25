@@ -4,7 +4,7 @@ export function Contact() {
       <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(61,217,245,0.1),rgba(255,255,255,0.025))] p-8 md:p-12 lg:p-14">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           {/* Left */}
-          <div className="section-hidden">
+          <div className="reveal">
             <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">Let's connect</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
               Let's start a conversation.
@@ -41,7 +41,7 @@ export function Contact() {
           </div>
 
           {/* Form */}
-          <div className="section-hidden rounded-[1.5rem] border border-white/10 bg-[#08111d]/60 p-6 backdrop-blur-sm">
+          <div className="reveal rounded-[1.5rem] border border-white/10 bg-[#08111d]/60 p-6 backdrop-blur-sm">
             <form
               action="https://formspree.io/f/placeholder"
               method="POST"

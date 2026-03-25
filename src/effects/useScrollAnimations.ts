@@ -6,15 +6,15 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function useScrollAnimations() {
   useEffect(() => {
-    // Give React a tick to paint
     const timer = setTimeout(() => {
-      // Generic section reveal
-      gsap.utils.toArray<HTMLElement>('.section-hidden').forEach((el) => {
-        gsap.to(el, {
-          opacity: 1,
-          y: 0,
+      // Generic section reveal — animate FROM offset state (elements start visible)
+      gsap.utils.toArray<HTMLElement>('.reveal').forEach((el) => {
+        gsap.from(el, {
+          opacity: 0,
+          y: 28,
           duration: 0.8,
           ease: 'power3.out',
+          immediateRender: false,
           scrollTrigger: {
             trigger: el,
             start: 'top 88%',
@@ -26,64 +26,55 @@ export function useScrollAnimations() {
       // Stagger card groups
       gsap.utils.toArray<HTMLElement>('.stagger-group').forEach((group) => {
         const cards = group.querySelectorAll<HTMLElement>('.stagger-card')
-        gsap.fromTo(
-          cards,
-          { opacity: 0, y: 32 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.65,
-            stagger: 0.1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: group,
-              start: 'top 85%',
-              toggleActions: 'play none none none',
-            },
+        gsap.from(cards, {
+          opacity: 0,
+          y: 28,
+          duration: 0.65,
+          stagger: 0.08,
+          ease: 'power3.out',
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: group,
+            start: 'top 88%',
+            toggleActions: 'play none none none',
           },
-        )
+        })
       })
 
       // Timeline alternating slide-in
       gsap.utils.toArray<HTMLElement>('.timeline-card').forEach((card, i) => {
-        gsap.fromTo(
-          card,
-          { opacity: 0, x: i % 2 === 0 ? -40 : 40 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 0.7,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 88%',
-              toggleActions: 'play none none none',
-            },
+        gsap.from(card, {
+          opacity: 0,
+          x: i % 2 === 0 ? -36 : 36,
+          duration: 0.7,
+          ease: 'power3.out',
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 88%',
+            toggleActions: 'play none none none',
           },
-        )
+        })
       })
 
       // Tool chips cascade
       const chips = document.querySelectorAll<HTMLElement>('.chip-cascade')
       if (chips.length) {
-        gsap.fromTo(
-          chips,
-          { opacity: 0, scale: 0.85 },
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 0.4,
-            stagger: 0.04,
-            ease: 'back.out(1.4)',
-            scrollTrigger: {
-              trigger: chips[0],
-              start: 'top 90%',
-              toggleActions: 'play none none none',
-            },
+        gsap.from(chips, {
+          opacity: 0,
+          scale: 0.85,
+          duration: 0.35,
+          stagger: 0.03,
+          ease: 'back.out(1.4)',
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: chips[0],
+            start: 'top 90%',
+            toggleActions: 'play none none none',
           },
-        )
+        })
       }
-    }, 100)
+    }, 150)
 
     return () => {
       clearTimeout(timer)

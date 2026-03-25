@@ -5,7 +5,7 @@ export function Experience() {
     <>
       {/* Timeline */}
       <section id="experience" className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-        <div className="section-hidden max-w-3xl">
+        <div className="reveal max-w-3xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">Trajectory</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
             A timeline of expansion across roles, products, and technologies.
@@ -46,7 +46,7 @@ export function Experience() {
 
       {/* Operating System */}
       <section className="mx-auto max-w-7xl px-6 pb-24 lg:px-10">
-        <div className="section-hidden max-w-3xl">
+        <div className="reveal max-w-3xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[#3dd9f5]">Operating system</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
             Hands-on, iterative planning — supported by real feedback loops.
@@ -68,7 +68,7 @@ export function Experience() {
         </div>
 
         {/* Tool chips */}
-        <div className="section-hidden mt-8 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 md:p-8">
+        <div className="reveal mt-8 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 md:p-8">
           <div className="flex flex-wrap gap-3">
             {processChips.map((chip) => (
               <span
