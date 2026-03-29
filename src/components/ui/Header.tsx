@@ -1,16 +1,20 @@
+import avatar from '../../assets/avatar.png'
+
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#08111d]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         {/* Wordmark */}
-        <div className="flex items-center gap-3">
-          <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border border-[#3dd9f5]/20 bg-white/5 text-sm font-semibold text-[#3dd9f5]">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(61,217,245,0.22),transparent_45%)]" />
-            <span className="relative font-['Clash_Display',sans-serif] tracking-[0.18em]">DB</span>
-            <div className="absolute bottom-1 left-1.5 right-1.5 h-[2px] rounded-full bg-[#3dd9f5]/70" />
+        <div className="flex items-center gap-4">
+          <div className="relative shrink-0">
+            {/* Outer glow ring */}
+            <div className="absolute inset-0 rounded-full bg-[#3dd9f5]/20 blur-md" />
+            <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-[#3dd9f5]/50 shadow-[0_0_20px_rgba(61,217,245,0.3)]">
+              <img src={avatar} alt="Daniel Barnett" className="h-full w-full object-cover object-top" />
+            </div>
           </div>
           <div>
-            <p className="text-sm font-semibold tracking-wide text-white">Daniel Barnett</p>
+            <p className="text-base font-semibold tracking-wide text-white">Daniel Barnett</p>
             <p className="text-xs text-slate-400">IT Delivery Leader · Games · AI · Blockchain</p>
           </div>
         </div>
