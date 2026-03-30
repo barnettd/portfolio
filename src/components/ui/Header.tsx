@@ -46,7 +46,8 @@ export function Header() {
             </svg>
           </a>
           <a
-            href="#"
+            href="/Daniel_Barnett_CV.pdf"
+            download="Daniel_Barnett_CV.pdf"
             className="rounded-full bg-[#3dd9f5] px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-[#7ae8f8]"
           >
             Download CV
