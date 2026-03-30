@@ -35,7 +35,7 @@ export function Header() {
         {/* Actions */}
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="https://linkedin.com/in/danielbarnett"
+            href="https://linkedin.com/in/daniel-barnett-uy"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-slate-300 transition hover:border-white/30 hover:text-white"

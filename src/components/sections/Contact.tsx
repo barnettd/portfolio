@@ -15,7 +15,7 @@ export function Contact() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="https://linkedin.com/in/danielbarnett"
+                href="https://linkedin.com/in/daniel-barnett-uy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-slate-200 transition hover:border-white/30 hover:text-white"

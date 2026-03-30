@@ -7,7 +7,7 @@ export function Footer() {
           <p className="mt-1">IT Delivery Leader · Games · AI · Blockchain</p>
         </div>
         <div className="flex gap-6">
-          <a href="https://linkedin.com/in/danielbarnett" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">LinkedIn</a>
+          <a href="https://linkedin.com/in/daniel-barnett-uy" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">LinkedIn</a>
           <a href="mailto:daniel@barnettd.com" className="transition hover:text-white">Email</a>
           <a href="#" className="transition hover:text-white">CV</a>
         </div>
