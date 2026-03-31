@@ -26,13 +26,16 @@ export function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="/Daniel_Barnett_CV.pdf"
+                download="Daniel_Barnett_CV.pdf"
                 className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/5"
               >
                 Download CV
               </a>
               <a
-                href="#"
+                href="https://calendar.app.google/aAZq6LqdknSwa5r98"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-[#3dd9f5] px-5 py-2.5 text-sm font-medium text-slate-900 transition hover:bg-[#7ae8f8]"
               >
                 Schedule time
